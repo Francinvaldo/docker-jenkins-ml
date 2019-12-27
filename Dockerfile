@@ -1,6 +1,6 @@
 from brumbrum/python3
-COPY  requirements.txt /
+COPY  requirements.txt server.py /
 run pip install -r  /requirements.txt
 expose 80
-CMD ["python","server.py"]
+CMD ["python","/server.py"]
 
