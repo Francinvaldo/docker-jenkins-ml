@@ -1,5 +1,5 @@
 from brumbrum/python3
-COPY  requirements.txt server.py /
+COPY  requirements.txt view/server.py /
 run pip install -r  /requirements.txt
 CMD ["python","/server.py"]
 
