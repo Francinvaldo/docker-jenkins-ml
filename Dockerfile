@@ -1,4 +1,5 @@
 from python
-run pip install -r requirements
+COPY requirements.txt libs
+run pip install -r libs/requirements
 CMD ["python","server.py"]
 
