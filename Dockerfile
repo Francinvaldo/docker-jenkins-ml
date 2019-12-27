@@ -1,4 +1,4 @@
-from python
+from brumbrum/python3
 COPY  requirements.txt /
 run pip install -r  /requirements.txt
 expose 80
