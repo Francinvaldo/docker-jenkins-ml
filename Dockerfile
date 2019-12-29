@@ -1,6 +1,6 @@
-from brumbrum/python3
+FROM brumbrum/python3
 COPY  requirements.txt view/server.py  /
-COPY  view/templates/css/*    /templates
-run pip install -r  /requirements.txt
+COPY  view/templates/css/*.   /templates/
+RUN pip install -r  /requirements.txt
 CMD ["python","/server.py"]
 
